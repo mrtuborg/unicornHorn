@@ -25,7 +25,7 @@
               },
               "position": {
                 "x": 1,
-                "y": 126
+                "y": 92
               },
               "angle": 0,
               "id": "12868dae-2107-41ad-ab4c-74651b3ee8a6",
@@ -108,26 +108,17 @@
               "angle": 0,
               "id": "ffaa03db-7676-4905-bf8b-33676a45d3a3",
               "z": 4,
-              "hasOpenThreats": true,
-              "threats": [
-                {
-                  "status": "Open",
-                  "severity": "Medium",
-                  "type": "Spoofing",
-                  "title": "PACS spoofing",
-                  "description": "MITM attack",
-                  "mitigation": "2-way authentification"
-                }
-              ],
+              "hasOpenThreats": false,
+              "threats": [],
               "attrs": {
                 ".element-shape": {
-                  "class": "element-shape hasOpenThreats isInScope"
+                  "class": "element-shape hasNoOpenThreats isInScope"
                 },
                 "text": {
                   "text": "operator"
                 },
                 ".element-text": {
-                  "class": "element-text hasOpenThreats isInScope"
+                  "class": "element-text hasNoOpenThreats isInScope"
                 }
               }
             },
@@ -564,6 +555,7 @@
               ],
               "z": 17,
               "hasOpenThreats": false,
+              "isEncrypted": false,
               "attrs": {
                 ".marker-target": {
                   "class": "marker-target hasNoOpenThreats isInScope"
@@ -741,6 +733,8 @@
               ],
               "z": 22,
               "hasOpenThreats": false,
+              "isPublicNetwork": true,
+              "isEncrypted": true,
               "attrs": {
                 ".marker-target": {
                   "class": "marker-target hasNoOpenThreats isInScope"
@@ -1257,6 +1251,8 @@
               ],
               "z": 36,
               "hasOpenThreats": false,
+              "isPublicNetwork": true,
+              "isEncrypted": true,
               "attrs": {
                 ".marker-target": {
                   "class": "marker-target hasNoOpenThreats isInScope"
@@ -1270,14 +1266,19 @@
               "type": "tm.Boundary",
               "smooth": true,
               "source": {
-                "x": 30,
-                "y": 20
+                "x": 172,
+                "y": 368
               },
               "target": {
-                "x": 110,
-                "y": 100
+                "x": 292,
+                "y": 516
               },
-              "vertices": [],
+              "vertices": [
+                {
+                  "x": 197,
+                  "y": 466
+                }
+              ],
               "id": "05864199-c7ad-4803-9a14-e571ead6feac",
               "z": 37,
               "attrs": {}
@@ -1290,10 +1291,15 @@
                 "y": 68
               },
               "target": {
-                "x": 122,
-                "y": 346
+                "x": 239,
+                "y": 375
               },
-              "vertices": [],
+              "vertices": [
+                {
+                  "x": 196,
+                  "y": 235
+                }
+              ],
               "id": "97ae9e75-29f5-40a1-9b31-9b70c421dd8c",
               "z": 38,
               "attrs": {}
